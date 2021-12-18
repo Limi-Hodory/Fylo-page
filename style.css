@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 30px;
+    background-color: hsl(218, 27%, 18%);
+    background-image: url('/images/bg-curvy-desktop.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: 1800px;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 20pt;
+
+    
+
+}
+/***********   Navbar   ***********/
+.navBar{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: white;
+    
+}
+
+.navBar_items{
+    display: flex;
+    list-style: none;
+}
+.navBar_items li{
+    padding: 10px;
+}
+/*********** End of navbar   ***********/
+
+
+/*********** Description   ***********/
+
+.description{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    flex-basis: 10%;
+}
+
+
+.description h1{
+    width: 550px;
+    text-align: center;
+    margin: 30px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    line-height: 26pt;
+    
+    
+}
+.description p{
+
+    width: 420px;
+    text-align: center;
+}
+.description button{
+    background-image: linear-gradient(to right, hsl(176, 68%, 64%) , hsl(198, 60%, 50%));
+    border-radius: 15px;
+    width: 160px;
+    height: 30px;
+    color: white;
+    border: none;
+    margin: 20px;
+}
+/*********** End of description   ***********/
+
+/***********  Icons   ***********/
+
+.iconsConteiner{
+    
+    display: flex;
+    text-align: center; 
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+.iconsConteiner h3{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    
+}
+.icon{
+   
+   width: 430px;
+   margin: auto;
+   padding: 30px;
+}
+/***********  End of icons   ***********/
+
+.description2{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.description2 h1{
+    font-family: 'Raleway';
+    line-height: 26pt;
+}
+.description2 p{
+    width: 450px;
+}
+
+a{
+    color: turquoise;
+}
+
+/* ********** Testimonials ********** */
+.testimonials{
+    background-color: hsl(218, 28%, 13%);
+    padding: 10px;
+    display: flex;
+    margin: 50px;
+    margin-top: 100px;
+
+}
+.testimonials_cards{
+    background-color: hsl(219, 30%, 18%);
+    width: 350px;
+    margin: 50px;
+    padding: 20px;
+ 
+}
+.testimonials_cards img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+.testimonials::before{
+   content: url('/images/bg-quotes.png');
+   position: absolute;
+   left:100px;
+}
+/* ********** End of testimonials ********** */
+
+body{
+    padding: 0px;
+    margin: 0px;
+}
+footer{
+    background-color: hsl(216, 53%, 9%);
+    bottom: 0;
+    left: 0;
+    padding:20px;
+    width: 100%;
+}
+
+#location{
+    width: 350px;
+}
+.contactUs{
+    margin-top: 20px;
+    display: flex;
+    padding: 10px;
+    margin-right: 100px;
+    
+}
+.contactUs p{
+    margin-left: 50px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    
+}
+ul{
+   list-style: none; 
+   margin-left: 100px;
+}
+.footerContainer{
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 375px) {
+    .navBar{
+        padding: 10px;
+    }
+  
+    .iconsConteiner{
+    
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .description2{
+        flex-direction: column;
+        margin: auto;
+
+    }
+    .testimonials{
+        flex-direction: column;
+        margin: auto;
+    }
+
+    footer{
+        height: 100%;
+        text-align: center;
+    }
+    .footerContainer{
+        flex-direction: column;
+    }
+    .contactUs{
+        flex-direction: column;
+        padding-top: 10px;
+     
+    }
+    .links{
+        flex-direction: column;
+        margin-right: 120px;
+        padding: 10px;
+    }
+}
